@@ -1,0 +1,227 @@
+1.JSON ITERATION
+
+let object=[
+    {"person":"John","age":30,"company":"Google"},
+    {"person":"Mohn","age":37,"company":"Flipkart"},
+    {"person":"Kohn","age":38,"company":"Amazon"},
+    {"person":"Sohan","age":40,"company":"Myntra"},
+    {"person":"Jenny","age":70,"company":"Apple"},
+]
+
+//iterating using for loop
+
+for(let i=0;i<object.length;i++){
+
+    console.log(`
+        Person:${object[i].person}
+        Age:${object[i].age}
+        Company:${object[i].company}
+   `);
+    
+}
+Output:
+                               					
+        Person:John
+        Age:30
+        Company:Google
+   
+						 
+        Person:Mohn
+        Age:37
+        Company:Flipkart
+   
+						
+        Person:Kohn
+        Age:38
+        Company:Amazon
+   
+						 
+        Person:Sohan
+        Age:40
+        Company:Myntra
+   
+						 
+        Person:Jenny
+        Age:70
+        Company:Apple
+
+
+//iterating using forEach method
+
+object.forEach(data=>{
+
+    console.log(`
+    Person:${data.person}
+    Age:${data.age}
+    Company:${data.company}
+    `);
+    }
+)
+Output: 
+    						 
+    Person:John
+    Age:30
+    Company:Google
+    
+						 
+    Person:Mohn
+    Age:37
+    Company:Flipkart
+    
+						
+    Person:Kohn
+    Age:38
+    Company:Amazon
+    
+						 
+    Person:Sohan
+    Age:40
+    Company:Myntra
+    
+						 
+    Person:Jenny
+    Age:70
+    Company:Apple
+
+//iterating using for in loop
+
+for(let key in object){
+    console.log(key);
+    console.log(`
+    Person:${object[key].name}
+    Age:${object[key].age}
+    Company:${object[key].company}
+    `);
+}
+Output:
+						 
+0						
+    Person:John
+    Age:30
+    Company:Google
+    
+						 
+1   						 
+    Person:Mohn
+    Age:37
+    Company:Flipkart
+    
+						 
+2						
+    Person:Kohn
+    Age:38
+    Company:Amazon
+    
+						 
+3						 
+    Person:Sohan
+    Age:40
+    Company:Myntra
+    
+						
+4						 
+    Person:Jenny
+    Age:70
+    Company:Apple
+
+
+//iterating using for of loop
+
+for(data of object){
+    console.log(`
+    Person:${data.person}
+    Age:${data.age}
+    Company:${data.company}
+    `)
+}
+Output:
+						 
+    Person:John
+    Age:30
+    Company:Google
+    
+						 
+    Person:Mohn
+    Age:37
+    Company:Flipkart
+    
+						 
+    Person:Kohn
+    Age:38
+    Company:Amazon
+    
+						
+    Person:Sohan
+    Age:40
+    Company:Myntra
+    
+						 
+    Person:Jenny
+    Age:70
+    Company:Apple
+
+
+2.RESUME USING JSON DATA:
+
+let objresume=[
+    {
+      "name":{
+        "firstName":"Tharun",
+        "lastName":"Manogaran"
+      }
+    },
+    {
+      "Contact":{
+        "Mobile":[936161850,6345255428],
+        "Email":"tharunmano1170@gmail.com"
+      }
+    },
+    {
+        "Education":{
+            "Degree":"Bachelor of Engineering",
+            "Year":"2014-2018",
+            "College":"PSG College of Technology",
+            "CGPA":6.59
+        }
+        
+    },
+    {
+        "Languages known":["English","Tamil"]
+    },
+    {
+        "Skills":{
+            "Tech skills":["java","python"],
+            "Soft skills":["critical thinking","problem solving"]
+        }
+    }
+    
+];
+console.log(objresume);
+
+output:
+
+(5) [{…}, {…}, {…}, {…}, {…}]
+0:
+name: {firstName: 'Tharun', lastName: 'Manogaran'}
+[[Prototype]]: Object
+1:
+Contact:
+Email: "tharunmano1170@gmail.com"
+Mobile: (2) [936161850, 6345255428]
+[[Prototype]]: Object
+[[Prototype]]: Object
+2:
+Education: {Degree: 'Bachelor of Engineering', Year: '2014-2018', College: 'PSG College of Technology', CGPA: 6.59}
+[[Prototype]]: Object
+3:
+Languages known: (2) ['English', 'Tamil']
+[[Prototype]]: Object
+4:
+Skills:
+Soft skills: (2) ['critical thinking', 'problem solving']
+Tech skills: (2) ['java', 'python']
+[[Prototype]]: Object
+[[Prototype]]: Object
+length: 5
+[[Prototype]]: Array(0)
+
